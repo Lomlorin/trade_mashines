@@ -1,0 +1,28 @@
+FLAGS ?= -O2
+
+FLAGS += -lrt
+
+
+#FLAGS += -ggdb
+
+all: ./src/cliem.c Product_list.o lib_json_db.o cJSON.o QueueRcv.o client.o
+	gcc  $(FLAGS) -I./include ./src/cliem.c Product_list.o lib_json_db.o cJSON.o QueueRcv.o client.o -o client.x
+	
+	
+Product_list.o: ./src/Product_list.c
+	gcc  $(FLAGS) -c -I./include ./src/Product_list.c -o Product_list.o
+	
+lib_json_db.o: ./src/lib_json_db.c 
+	gcc  $(FLAGS) -c -I./include ./src/lib_json_db.c -o lib_json_db.o
+
+cJSON.o: ./src/cJSON.c
+	gcc  $(FLAGS) -c -I./include ./src/cJSON.c -o cJSON.o
+
+QueueRcv.o: ./src/QueueRcv.c
+	gcc  $(FLAGS) -c -I./include ./src/QueueRcv.c -o QueueRcv.o
+	
+client.o: ./src/client.c
+	gcc  $(FLAGS) -c -I./include ./src/client.c -o client.o
+	
+clean:
+	rm -rf *.o *.x 

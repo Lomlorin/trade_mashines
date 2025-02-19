@@ -1,0 +1,43 @@
+{
+	"products":	[{
+			"name":	"dcfvec",
+			"cost":	33,
+			"quantity":	1000,
+			"description":	"cfggbrb"
+		}, {
+			"name":	"ew",
+			"cost":	1,
+			"quantity":	1,
+			"description":	"1"
+		}, {
+			"name":	"eee",
+			"cost":	1011,
+			"quantity":	1000000,
+			"description":	"aple ks ee"
+		}, {
+			"name":	"appleaa",
+			"cost":	111,
+			"quantity":	123,
+			"description":	"edreft"
+		}, {
+			"name":	"eea",
+			"cost":	19,
+			"quantity":	987533,
+			"description":	"edrgvdfcd"
+		}, {
+			"name":	"qwerty",
+			"cost":	1,
+			"quantity":	1000,
+			"description":	"это кливатура"
+		}, {
+			"name":	"apple gold - best tast",
+			"cost":	1,
+			"quantity":	1,
+			"description":	""
+		}, {
+			"name":	"apple gold",
+			"cost":	100,
+			"quantity":	0,
+			"description":	"new description"
+		}]
+}
